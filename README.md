@@ -1,2 +1,2 @@
 # FSD
-Full stack Bootcamp learning
+Full stack Bootcamp training practice learning
