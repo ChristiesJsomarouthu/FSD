@@ -9,6 +9,9 @@
     Weather condition: <span id="description"></span>
     <p> Current Temperature : <span id="temp"></span> </p>
     <p> Location : <span id="location"></span> </p>
+    <p> Wind : <div> Speed :<span id="speed"> </span></div>
+        <div> Gust :<span id="gust"> </span></div>
+    </p>
   </div>
   <script lang="text/javascript">
    function weatherBalloon( cityID ) {
@@ -35,6 +38,8 @@
 	document.getElementById('description').innerHTML = d.weather[0].description;
 	document.getElementById('temp').innerHTML = celcius + '&deg;';
 	document.getElementById('location').innerHTML = d.name;
+    document.getElementById('speed').innerHTML = d.wind.speed;
+    document.getElementById('gust').innerHTML = d.wind.gust;
     }
   </script>
 </body>
